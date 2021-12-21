@@ -7,7 +7,7 @@ function FeedbackStats({ feedback }) {
       return prev + next.rating;
     }, 0) / feedback.length;
 
-  // Regular expression > only 1 decimal if any
+  // Regular expression > only 1 decimal if any && no decimal if nothing
   average = average.toFixed(1).replace(/[.,]0$/, "");
 
   return (
